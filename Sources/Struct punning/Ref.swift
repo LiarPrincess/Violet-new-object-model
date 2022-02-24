@@ -5,9 +5,8 @@
 /// https://github.com/apple/swift-evolution/blob/master/proposals/0107-unsaferawpointer.md
 struct Ref<Pointee>: CustomStringConvertible {
 
-  // TODO: This can be made private, but for testing 'C' types we have it public
-  typealias Ptr = UnsafeMutableRawPointer
-  var ptr: Ptr
+  private typealias Ptr = UnsafeMutableRawPointer
+  private var ptr: Ptr
 
   private var typedPtr: UnsafeMutablePointer<Pointee> {
     // The memory was bound inside `self.initialize`,
@@ -25,8 +24,7 @@ struct Ref<Pointee>: CustomStringConvertible {
   }
 
   /// Init with allocated and initialized pointer.
-  // TODO: This can be made private
-  init(ptr: Ptr) {
+  private init(ptr: Ptr) {
     self.ptr = ptr
   }
 
