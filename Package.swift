@@ -6,6 +6,6 @@ import PackageDescription
 let package = Package(
   name: "swift_casting",
   targets: [
-    .target(name: "swift_casting", path: "./Sources"),
+    .target(name: "Struct punning"),
   ]
 )
