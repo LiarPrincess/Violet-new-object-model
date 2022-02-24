@@ -14,7 +14,7 @@ struct PyObjectHeader: CustomStringConvertible {
 
   /// Name of the type (mostly for convenience).
   var typeName: String {
-    return type.name
+    return self.type.name
   }
 
   var description: String {

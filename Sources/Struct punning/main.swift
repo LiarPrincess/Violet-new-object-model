@@ -1,3 +1,5 @@
+// swiftlint:disable force_unwrapping
+
 func printTypes() {
   print("=== Types ===")
 
@@ -121,12 +123,12 @@ print()
 testMethodCalls()
 print()
 
-//print("===")
-//print("size:     ", MemoryLayout<PyObjectHeader>.size)
-//print("stride:   ", MemoryLayout<PyObjectHeader>.stride)
-//print("alignment:", MemoryLayout<PyObjectHeader>.alignment)
-//static_assert(sizeof(HeapObject) == 2*sizeof(void*),
+// print("===")
+// print("size:     ", MemoryLayout<PyObjectHeader>.size)
+// print("stride:   ", MemoryLayout<PyObjectHeader>.stride)
+// print("alignment:", MemoryLayout<PyObjectHeader>.alignment)
+// static_assert(sizeof(HeapObject) == 2*sizeof(void*),
 //              "HeapObject must be two pointers long");
 //
-//static_assert(alignof(HeapObject) == alignof(void*),
+// static_assert(alignof(HeapObject) == alignof(void*),
 //              "HeapObject must be pointer-aligned");
