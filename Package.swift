@@ -7,5 +7,6 @@ let package = Package(
   name: "swift_casting",
   targets: [
     .target(name: "Struct punning"),
+    .target(name: "Layout by hand")
   ]
 )

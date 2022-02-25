@@ -3,7 +3,7 @@ enum PyMemory {
 
   // MARK: - Init
 
-  /// Those types require special treatement because:
+  /// Those types require special treatment because:
   /// - `object` type has `type` type
   /// - `type` type has `type` type (self reference) and `object` type as base
   static func initTypeAndObjectTypes() -> (typeType: PyTypeRef, objectType: PyTypeRef) {
